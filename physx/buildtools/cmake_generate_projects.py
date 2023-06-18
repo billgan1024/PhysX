@@ -155,9 +155,9 @@ class CMakePreset:
         elif self.compiler == 'xcode':
             outString = outString + '-G Xcode'
         elif self.targetPlatform == 'linux':
-            outString = outString + '-G \"Unix Makefiles\"'
+            outString = outString + '-G \"Ninja\"'
         elif self.targetPlatform == 'linuxAarch64':
-            outString = outString + '-G \"Unix Makefiles\"'
+            outString = outString + '-G \"Ninja\"'
 
         if self.targetPlatform == 'win64':
             outString = outString + ' -Ax64'
